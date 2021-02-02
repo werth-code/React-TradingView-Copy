@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import CardComp from './components/CardComp'
+import Header from './components/Header'
+import SecondaryNav from "./components/SecondaryNav"
+import MarketQuotes from './components/MarketQuotes';
+import UpperTicker from './components/upper-ticker/UpperTicker';
 import './App.css';
 
+
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+
+        <div>
+          <UpperTicker />
+          <Header />
+          <SecondaryNav />
+          <MarketQuotes/>
+          <CardComp />
+        </div>
+    )
+
 }
 
-export default App;
+export default App

@@ -1,0 +1,10 @@
+.mq-header {
+    font-size: xx-large;
+}
+
+.mq-container .btn{
+  border-radius: 25px;
+  border: none;
+  background: rgb(233, 234, 236);
+  color: black;
+}
