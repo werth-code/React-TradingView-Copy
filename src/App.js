@@ -3,6 +3,7 @@ import Header from './components/Header'
 import SecondaryNav from "./components/SecondaryNav"
 import MarketQuotes from './components/MarketQuotes';
 import UpperTicker from './components/upper-ticker/UpperTicker';
+import FooterContainer from "./components/footer-container/FooterContainer"
 import './App.css';
 
 
@@ -17,6 +18,7 @@ function App() {
           <SecondaryNav />
           <MarketQuotes/>
           <CardComp />
+          <FooterContainer />
         </div>
     )
 

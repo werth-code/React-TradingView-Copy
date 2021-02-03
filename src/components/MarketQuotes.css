@@ -3,6 +3,7 @@
 }
 
 .mq-container .btn{
+  margin: 3px;
   border-radius: 25px;
   border: none;
   background: rgb(233, 234, 236);
