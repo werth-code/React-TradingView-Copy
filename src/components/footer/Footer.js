@@ -6,19 +6,25 @@ import { UserContext } from '../../App'
 export default function Footer() {
 
   const footerArr = useContext(UserContext)   // This passes in our variable exported from App.j
-  console.log(footerArr)
+  const cardTitles = footerArr.map( footer => {
+ 
+    return (
+        
+        
+            <Card class='col-md-3' style={{ border: 'none' }}>
+              <Card.Body>
+                <Card.Title>{footer.header}</Card.Title>
+                {footer.values.map(ele => <Card.Text>{ele}</Card.Text>)}
+              </Card.Body>
+            </Card>
+          
+      
+    )
+  })
 
     return (
-        <div>
-          <Card style={{ border: 'none' }}>
-            <Card.Body>
-            <Card.Title>Products</Card.Title>
-            <Card.Text>Chart</Card.Text>
-            <Card.Text>Pine Script</Card.Text>
-            <Card.Text>Stock Screener</Card.Text>
-            <Card.Text>Economic Calendar</Card.Text>
-            </Card.Body>
-          </Card>
-        </div>
+          <div class='row'>
+            {cardTitles}
+          </div>
     )
 }
