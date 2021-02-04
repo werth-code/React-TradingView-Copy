@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Card } from 'react-bootstrap';
+import { UserContext } from '../../App'
+
 
 export default function Footer() {
+
+  const footerArr = useContext(UserContext)   // This passes in our variable exported from App.j
+  console.log(footerArr)
+
     return (
         <div>
           <Card style={{ border: 'none' }}>
